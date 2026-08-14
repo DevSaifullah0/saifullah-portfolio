@@ -22,83 +22,52 @@ export const projects = [
     coverImage: "/projects/excloth/cover.png",
 
     images: [
-      {
-        name: "Home Screen",
-        src: "/projects/excloth/home.png",
-        alt: "ExCloth Home Screen",
-      },
-      {
-        name: "Product Details",
-        src: "/projects/excloth/ProductDetails.png",
-        alt: "ExCloth Product Details Screen",
-      },
-      {
-        name: "Wishlist",
-        src: "/projects/excloth/wishlist.png",
-        alt: "ExCloth Wishlist Screen",
-      },
-      {
-        name: "Shopping Cart",
-        src: "/projects/excloth/MyCart.png",
-        alt: "ExCloth Shopping Cart Screen",
-      },
-      {
-        name: "Checkout",
-        src: "/projects/excloth/checkout.png",
-        alt: "ExCloth Checkout Screen",
-      },
-      {
-        name: "Payment",
-        src: "/projects/excloth/payment.png",
-        alt: "ExCloth Payment Screen",
-      },
-      {
-        name: "Orders",
-        src: "/projects/excloth/MyOrders.png",
-        alt: "ExCloth Orders Screen",
-      },
-      {
-        name: "Profile",
-        src: "/projects/excloth/profile.png",
-        alt: "ExCloth Profile Screen",
-      },
-      {
-        name: "Splash Screen",
-        src: "/projects/excloth/Splash.png",
-        alt: "ExCloth Splash Screen",
-      },
-      {
-        name: "Order Placed",
-        src: "/projects/excloth/OrderPlaced.png",
-        alt: "ExCloth Order Placed Screen",
-      },
-      {
-        name: "Sign Up",
-        src: "/projects/excloth/Register.png",
-        alt: "ExCloth Sign Up Screen",
-      },
-      {
-        name: "Sign In",
-        src: "/projects/excloth/Login.png",
-        alt: "ExCloth Sign In Screen",
-      },
-      {
-        name: "Reset Password",
-        src: "/projects/excloth/ResetPassword.png",
-        alt: "ExCloth Reset Password Screen",
-      },
-      {
-        name: "Forgot Password",
-        src: "/projects/excloth/ForgetPassword.png",
-        alt: "ExCloth Forgot Password Screen",
-      },
-      {
-        name: "Categories",
-        src: "/projects/excloth/Categories.png",
-        alt: "ExCloth Categories Screen",
-      },
-    ],
-
+  {
+    name: "Home Screen",
+    src: "/projects/excloth/home.png",
+    alt: "ExCloth Home Screen",
+  },
+  {
+    name: "Product Details",
+    src: "/projects/excloth/product-details.png",
+    alt: "ExCloth Product Details Screen",
+  },
+  {
+    name: "Wishlist",
+    src: "/projects/excloth/wishlist.png",
+    alt: "ExCloth Wishlist Screen",
+  },
+  {
+    name: "Shopping Cart",
+    src: "/projects/excloth/cart.png",
+    alt: "ExCloth Shopping Cart Screen",
+  },
+  {
+    name: "Checkout",
+    src: "/projects/excloth/checkout.png",
+    alt: "ExCloth Checkout Screen",
+  },
+  {
+    name: "Payment",
+    src: "/projects/excloth/payment.png",
+    alt: "ExCloth Payment Screen",
+  },
+  {
+    name: "Orders",
+    src: "/projects/excloth/orders.png",
+    alt: "ExCloth Orders Screen",
+  },
+  {
+    name: "Profile",
+    src: "/projects/excloth/profile.png",
+    alt: "ExCloth Profile Screen",
+  },
+  {
+    name: "Splash Screen",
+    src: "/projects/excloth/splash.png",
+    alt: "ExCloth Splash Screen",
+  },
+],
     overview:
       "ExCloth is a modern fashion e-commerce mobile application built with React Native CLI. My primary focus was frontend mobile development, including responsive interfaces, navigation flows, reusable components, product interactions, authentication screens, checkout experiences and integration with backend services.",
 
