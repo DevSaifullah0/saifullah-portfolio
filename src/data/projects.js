@@ -224,7 +224,7 @@ export const projects = [
 
     links: {
       github: "https://github.com/DevSaifullah0/ExCloth.git",
-      demo: "https://youtu.be/-5z-Xm2sKC4?si=qB-0eK-gf_N4f8Kr",
+      demo: "https://youtu.be/-5z-Xm2sKC4?si=joqo-7bpIOOGHJUJ",
       apk: "https://github.com/DevSaifullah0/ExCloth/releases/download/v1.0.0/ExCloth.apk",
     },
   },
