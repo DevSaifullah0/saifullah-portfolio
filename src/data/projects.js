@@ -67,6 +67,42 @@ export const projects = [
     src: "/projects/excloth/splash.png",
     alt: "ExCloth Splash Screen",
   },
+  {
+    name: "Admin Panel",
+    src: "/projects/excloth/admin.png",
+    alt: "ExCloth Admin Panel",
+  },
+  {
+    name: "Users Management",
+    src: "/projects/excloth/usersmanagement.png",
+    alt: "ExCloth Users Management",
+  },
+  {
+    name: "Products Management",
+    src: "/projects/excloth/products.png",
+    alt: "ExCloth Products Management",
+  },
+  {
+    name: "Admin Managements",
+    src: "/projects/excloth/management.png",
+    alt: "ExCloth Admin Management",
+  },
+  {
+    name: "Admin Broadcasting",
+    src: "/projects/excloth/broadcasting.png",
+    alt: "ExCloth Admin Broadcasting",
+  },
+  {
+    name: "Orders Management",
+    src: "/projects/excloth/ordermanagement.png",
+    alt: "ExCloth Orders Management",
+  },
+  {
+    name: "Coupon Management",
+    src: "/projects/excloth/coupon.png",
+    alt: "ExCloth Coupon Management",
+  },
+  
 ],
     overview:
       "ExCloth is a modern fashion e-commerce mobile application built with React Native CLI. My primary focus was frontend mobile development, including responsive interfaces, navigation flows, reusable components, product interactions, authentication screens, checkout experiences and integration with backend services.",
@@ -188,8 +224,8 @@ export const projects = [
 
     links: {
       github: "https://github.com/DevSaifullah0/ExCloth.git",
-      demo: "",
-      apk: "https://github.com/DevSaifullah0/ExCloth/releases/download/v1.0.0/ExCloth-V1.0.0.apk",
+      demo: "https://youtu.be/-5z-Xm2sKC4?si=qB-0eK-gf_N4f8Kr",
+      apk: "https://github.com/DevSaifullah0/ExCloth/releases/download/v1.0.0/ExCloth.apk",
     },
   },
 
