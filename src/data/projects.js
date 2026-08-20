@@ -229,77 +229,234 @@ export const projects = [
     },
   },
 
-  /*
   {
-    id: 2,
+  id: 2,
 
-    slug: "ptcs",
+  slug: "villa",
 
-    featured: true,
+  featured: true,
 
-    title: "PTCS",
+  title: "Villa",
 
-    category: "React Native Mobile Application",
+  category: "React Native Real Estate Mobile Application",
 
-    role: "React Native Frontend Developer",
+  role: "React Native Frontend Developer",
 
-    status: "In Development",
+  status: "Completed",
 
-    year: "2026",
+  year: "2026",
 
-    shortDescription:
-      "Short description here.",
+  shortDescription:
+    "A modern real estate mobile application built with React Native and Expo where buyers can discover, search, filter and save properties, while brokers can publish and manage their property listings.",
 
-    coverImage: "/projects/ptcs/cover.png",
+  coverImage: "/projects/villa/cover.png",
 
-    images: [
-      {
-        name: "Home Screen",
-        src: "/projects/ptcs/home.png",
-        alt: "PTCS Home Screen",
-      },
-    ],
-
-    overview: "Overview here.",
-
-    problem: "Problem here.",
-
-    solution: "Solution here.",
-
-    features: [
-      "Feature One",
-      "Feature Two",
-    ],
-
-    techStack: [
-      "React Native CLI",
-      "JavaScript",
-      "React Navigation",
-    ],
-
-    details: [
-      {
-        label: "My Role",
-        value: "React Native Frontend Developer",
-      },
-      {
-        label: "Platform",
-        value: "Android & iOS",
-      },
-    ],
-
-    learnings: [
-      "Learning One",
-      "Learning Two",
-    ],
-
-    links: {
-      github: "",
-      demo: "",
-      apk: "",
+  images: [
+    {
+      name: "Splash Screen",
+      src: "/projects/villa/splash.png",
+      alt: "Villa Splash Screen",
     },
+    {
+      name: "Login Screen",
+      src: "/projects/villa/login.png",
+      alt: "Villa Login Screen",
+    },
+    {
+      name: "Register Screen",
+      src: "/projects/villa/register.png",
+      alt: "Villa Register Screen",
+    },
+    {
+      name: "Forgot Password",
+      src: "/projects/villa/forgot.png",
+      alt: "Villa Forgot Password Screen",
+    },
+    {
+      name: "Home Screen",
+      src: "/projects/villa/home.png",
+      alt: "Villa Home Screen",
+    },
+    {
+      name: "Search Screen",
+      src: "/projects/villa/search.png",
+      alt: "Villa Screen Screen",
+    },
+    {
+      name: "Add Filters",
+      src: "/projects/villa/filters.png",
+      alt: "Villa Filters Screen",
+    },
+    {
+      name: "Add Property",
+      src: "/projects/villa/property.png",
+      alt: "Villa Add Property Screen",
+    },
+    {
+      name: "Saved Property",
+      src: "/projects/villa/save.png",
+      alt: "Villa Saved Property Screen",
+    },
+    {
+      name: "My Properties",
+      src: "/projects/villa/post.png",
+      alt: "Villa Broker Property Management Screen",
+    },
+    {
+      name: "Profile",
+      src: "/projects/villa/profile.png",
+      alt: "Villa Profile Screen",
+    },
+    {
+      name: "Help and Support",
+      src: "/projects/villa/helpandsupport.png",
+      alt: "Villa Help and Support",
+    },
+    {
+      name: "Settings Screen",
+      src: "/projects/villa/settings.png",
+      alt: "Villa Settings Screen",
+    },
+  ],
+
+  overview:
+    "Villa is a role-based real estate mobile application developed with React Native, Expo and TypeScript. The application provides separate experiences for property buyers and brokers. Buyers can discover properties, search and filter listings, view detailed property information and save favorites, while brokers can publish, edit and manage their own property listings.",
+
+  problem:
+    "Property discovery applications require multiple user experiences to work together smoothly. Buyers need a simple way to browse, search, filter and save properties, while property brokers need tools to publish and manage listings. Authentication, role-based navigation, property images, listing management and backend data must remain organized and easy to use across the application.",
+
+  solution:
+    "I developed Villa using React Native with Expo and TypeScript, creating reusable mobile interfaces and role-based navigation flows for buyers and brokers. Expo Router handles application navigation, Clerk provides authentication, Supabase manages property and application data, Zustand handles client-side state such as filters, and NativeWind provides responsive and reusable styling throughout the application.",
+
+  features: [
+    "User Authentication",
+    "Buyer & Broker Roles",
+    "Role-Based Navigation",
+    "Email & Password Authentication",
+    "Google Sign-In",
+    "Forgot Password",
+    "Password Reset",
+    "Email Verification",
+    "Property Listings",
+    "Featured Properties",
+    "Property Search",
+    "Property Filters",
+    "Property Details",
+    "Property Image Gallery",
+    "Favorite Properties",
+    "Location-Based Property Information",
+    "Broker Contact Information",
+    "WhatsApp Contact Flow",
+    "Add Property",
+    "Multiple Property Image Upload",
+    "Edit Property",
+    "Delete Property",
+    "Mark Property as Sold",
+    "Broker Property Management",
+    "My Properties",
+    "Profile Management",
+  ],
+
+  techStack: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Expo Router",
+    "NativeWind",
+    "Zustand",
+    "Clerk",
+    "Supabase",
+    "PostgreSQL",
+  ],
+
+  details: [
+    {
+      label: "My Role",
+      value: "React Native Frontend Developer",
+    },
+
+    {
+      label: "Platform",
+      value: "Android & iOS",
+    },
+
+    {
+      label: "Frontend",
+      value: "React Native & Expo",
+    },
+
+    {
+      label: "Language",
+      value: "TypeScript",
+    },
+
+    {
+      label: "Styling",
+      value: "NativeWind",
+    },
+
+    {
+      label: "Navigation",
+      value: "Expo Router",
+    },
+
+    {
+      label: "State Management",
+      value: "Zustand",
+    },
+
+    {
+      label: "Authentication",
+      value: "Clerk",
+    },
+
+    {
+      label: "Backend Service",
+      value: "Supabase",
+    },
+
+    {
+      label: "Database",
+      value: "PostgreSQL",
+    },
+
+    {
+      label: "Project Type",
+      value: "Real Estate Mobile Application",
+    },
+
+    {
+      label: "Year",
+      value: "2026",
+    },
+  ],
+
+  learnings: [
+    "Building reusable React Native components with TypeScript",
+    "Developing mobile applications using Expo",
+    "Creating scalable file-based navigation with Expo Router",
+    "Implementing role-based application experiences",
+    "Integrating Clerk authentication with React Native",
+    "Implementing Google authentication flows",
+    "Connecting React Native applications with Supabase",
+    "Managing PostgreSQL-backed application data",
+    "Managing application state with Zustand",
+    "Building property search and filtering experiences",
+    "Creating dynamic property detail screens",
+    "Implementing favorites and saved property flows",
+    "Building multiple image upload experiences",
+    "Designing broker property management interfaces",
+    "Creating edit, delete and sold property workflows",
+    "Developing responsive interfaces with NativeWind",
+    "Debugging Expo and React Native application issues",
+  ],
+
+  links: {
+    github: "https://github.com/DevSaifullah0/Villa-Property-App-.git",
+    demo: "https://youtu.be/DoGrTBddA5A?si=Gsn2X-sDlbnICqWo",
+    apk: "https://expo.dev/accounts/saifishaikhs-team/projects/villa/builds/6f7e06ee-1d0e-4e7f-9a9b-814f7b3cd673",
   },
-  */
+},
 ];
 
 export function getProjectBySlug(slug) {
