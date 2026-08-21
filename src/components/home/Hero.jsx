@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-
 import {
   motion,
   useMotionValue,
@@ -57,7 +56,11 @@ export default function Hero() {
     [-30, 30],
   );
 
-  const handleMouseMove = (event) => {
+  // =====================================================
+  // POINTER
+  // =====================================================
+
+  const handlePointerMove = (event) => {
     const rect =
       event.currentTarget.getBoundingClientRect();
 
@@ -75,7 +78,7 @@ export default function Hero() {
     mouseY.set(y);
   };
 
-  const resetMouse = () => {
+  const resetPointer = () => {
     mouseX.set(0);
     mouseY.set(0);
   };
@@ -83,15 +86,32 @@ export default function Hero() {
   return (
     <section
       id="top"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={resetMouse}
-      className="relative mx-auto min-h-[calc(100vh-81px)] max-w-7xl overflow-hidden px-6 py-16 lg:py-20"
+      onPointerMove={handlePointerMove}
+      onPointerLeave={resetPointer}
+      className="
+        relative
+        mx-auto
+        min-h-[calc(100vh-81px)]
+        max-w-7xl
+        overflow-hidden
+        px-6
+        py-14
+        lg:py-20
+      "
     >
       {/* ================================================= */}
       {/* HERO GRID */}
       {/* ================================================= */}
 
-      <div className="grid min-h-[calc(100vh-180px)] items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+      <div
+        className="
+          grid
+          min-h-[calc(100vh-180px)]
+          items-center
+          gap-12
+          lg:grid-cols-[1.15fr_0.85fr]
+        "
+      >
         {/* ================================================= */}
         {/* LEFT SIDE CONTENT */}
         {/* ================================================= */}
@@ -132,7 +152,15 @@ export default function Hero() {
               delay: 0.35,
               duration: 0.9,
             }}
-            className="text-5xl font-bold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl xl:text-8xl"
+            className="
+              text-5xl
+              font-bold
+              leading-[1.02]
+              tracking-tight
+              sm:text-6xl
+              md:text-7xl
+              xl:text-8xl
+            "
           >
             React Native
 
@@ -170,7 +198,15 @@ export default function Hero() {
               delay: 0.9,
               duration: 0.8,
             }}
-            className="mt-8 max-w-2xl text-lg leading-8 text-gray-400 md:text-xl"
+            className="
+              mt-8
+              max-w-2xl
+              text-base
+              leading-8
+              text-gray-400
+              sm:text-lg
+              md:text-xl
+            "
           >
             I build modern, responsive and user-friendly
             mobile applications using React Native and
@@ -224,7 +260,16 @@ export default function Hero() {
             transition={{
               delay: 1.4,
             }}
-            className="mt-14 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-gray-600"
+            className="
+              mt-14
+              flex
+              flex-wrap
+              items-center
+              gap-x-5
+              gap-y-3
+              text-sm
+              text-gray-600
+            "
           >
             <span>React Native CLI</span>
             <span>•</span>
@@ -244,12 +289,13 @@ export default function Hero() {
 
         {/* ================================================= */}
         {/* RIGHT SIDE IMAGE SECTION */}
+        {/* MOBILE + DESKTOP */}
         {/* ================================================= */}
 
         <motion.div
           initial={{
             opacity: 0,
-            x: 80,
+            x: 50,
             scale: 0.95,
           }}
           animate={{
@@ -261,21 +307,48 @@ export default function Hero() {
             delay: 0.45,
             duration: 1,
           }}
-          className="relative hidden h-[620px] items-end justify-center lg:flex"
+          className="
+            relative
+            flex
+            h-[430px]
+            w-full
+            items-end
+            justify-center
+            sm:h-[510px]
+            lg:h-[620px]
+          "
           style={{
             perspective: "1200px",
           }}
         >
-          {/* Background glow */}
+          {/* Background Glow */}
 
           <motion.div
             style={{
               x: glowX,
             }}
-            className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/[0.035] blur-[90px]"
+            className="
+              absolute
+              left-1/2
+              top-1/2
+              h-[290px]
+              w-[290px]
+              -translate-x-1/2
+              -translate-y-1/2
+              rounded-full
+              bg-white/[0.04]
+              blur-[80px]
+              sm:h-[360px]
+              sm:w-[360px]
+              lg:h-[420px]
+              lg:w-[420px]
+              lg:blur-[90px]
+            "
           />
 
-          {/* Large subtle ring */}
+          {/* ================================================= */}
+          {/* ROTATING RING 1 */}
+          {/* ================================================= */}
 
           <motion.div
             animate={{
@@ -286,24 +359,80 @@ export default function Hero() {
               repeat: Infinity,
               ease: "linear",
             }}
-            className="absolute left-1/2 top-1/2 h-[430px] w-[430px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.06]"
-          />
+            className="
+              absolute
+              left-1/2
+              top-1/2
+              h-[300px]
+              w-[300px]
+              -translate-x-1/2
+              -translate-y-1/2
+              rounded-full
+              border
+              border-white/[0.06]
+              sm:h-[380px]
+              sm:w-[380px]
+              lg:h-[430px]
+              lg:w-[430px]
+            "
+          >
+            <motion.span
+              animate={{
+                scale: [1, 1.5, 1],
+                opacity: [0.4, 1, 0.4],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+              }}
+              className="
+                absolute
+                left-1/2
+                top-[-4px]
+                h-2
+                w-2
+                -translate-x-1/2
+                rounded-full
+                bg-white
+              "
+            />
+          </motion.div>
 
-          {/* Second ring */}
+          {/* ================================================= */}
+          {/* ROTATING RING 2 */}
+          {/* ================================================= */}
 
           <motion.div
             animate={{
               rotate: -360,
             }}
             transition={{
-              duration: 50,
+              duration: 55,
               repeat: Infinity,
               ease: "linear",
             }}
-            className="absolute left-1/2 top-1/2 h-[510px] w-[510px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/[0.035]"
+            className="
+              absolute
+              left-1/2
+              top-1/2
+              h-[350px]
+              w-[350px]
+              -translate-x-1/2
+              -translate-y-1/2
+              rounded-full
+              border
+              border-dashed
+              border-white/[0.035]
+              sm:h-[440px]
+              sm:w-[440px]
+              lg:h-[510px]
+              lg:w-[510px]
+            "
           />
 
-          {/* Portrait frame */}
+          {/* ================================================= */}
+          {/* PORTRAIT FRAME */}
+          {/* ================================================= */}
 
           <motion.div
             animate={{
@@ -314,31 +443,118 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-5 z-10 h-[540px] w-[390px] overflow-hidden rounded-[42px] border border-white/[0.08] bg-white/[0.018]"
+            className="
+              absolute
+              bottom-0
+              z-10
+              h-[390px]
+              w-[275px]
+              overflow-hidden
+              rounded-[34px]
+              border
+              border-white/[0.08]
+              bg-white/[0.018]
+              sm:h-[465px]
+              sm:w-[330px]
+              sm:rounded-[38px]
+              lg:bottom-5
+              lg:h-[540px]
+              lg:w-[390px]
+              lg:rounded-[42px]
+            "
           >
-            {/* Top Left corner */}
+            {/* Top Left */}
 
-            <div className="absolute left-5 top-5 z-20 h-10 w-10 border-l border-t border-white/20" />
+            <div
+              className="
+                absolute
+                left-4
+                top-4
+                z-20
+                h-9
+                w-9
+                border-l
+                border-t
+                border-white/20
+                lg:left-5
+                lg:top-5
+                lg:h-10
+                lg:w-10
+              "
+            />
 
-            {/* Top Right corner */}
+            {/* Top Right */}
 
-            <div className="absolute right-5 top-5 z-20 h-10 w-10 border-r border-t border-white/20" />
+            <div
+              className="
+                absolute
+                right-4
+                top-4
+                z-20
+                h-9
+                w-9
+                border-r
+                border-t
+                border-white/20
+                lg:right-5
+                lg:top-5
+                lg:h-10
+                lg:w-10
+              "
+            />
 
-            {/* Bottom Left corner */}
+            {/* Bottom Left */}
 
-            <div className="absolute bottom-5 left-5 z-20 h-10 w-10 border-b border-l border-white/10" />
+            <div
+              className="
+                absolute
+                bottom-4
+                left-4
+                z-20
+                h-9
+                w-9
+                border-b
+                border-l
+                border-white/10
+                lg:bottom-5
+                lg:left-5
+              "
+            />
 
-            {/* Bottom Right corner */}
+            {/* Bottom Right */}
 
-            <div className="absolute bottom-5 right-5 z-20 h-10 w-10 border-b border-r border-white/10" />
+            <div
+              className="
+                absolute
+                bottom-4
+                right-4
+                z-20
+                h-9
+                w-9
+                border-b
+                border-r
+                border-white/10
+                lg:bottom-5
+                lg:right-5
+              "
+            />
 
-            {/* Subtle background */}
+            {/* Background */}
 
-            <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] via-transparent to-black/40" />
+            <div
+              className="
+                absolute
+                inset-0
+                bg-gradient-to-b
+                from-white/[0.03]
+                via-transparent
+                to-black/40
+              "
+            />
 
-            {/* ============================================= */}
+            {/* ================================================= */}
             {/* YOUR IMAGE */}
-            {/* ============================================= */}
+            {/* ================================================= */}
 
             <motion.img
               src="/images/saifullah-hero.png"
@@ -350,13 +566,51 @@ export default function Hero() {
                 rotateY,
                 transformStyle: "preserve-3d",
               }}
-              className="absolute bottom-0 left-1/2 h-[96%] w-auto max-w-none -translate-x-1/2 object-contain object-bottom drop-shadow-[0_30px_50px_rgba(0,0,0,0.6)]"
+              animate={{
+                translateY: [0, -5, 0],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="
+                absolute
+                bottom-0
+                left-1/2
+                h-[96%]
+                max-h-full
+                w-auto
+                max-w-[95%]
+                -translate-x-1/2
+                object-contain
+                object-bottom
+                drop-shadow-[0_30px_50px_rgba(0,0,0,0.6)]
+                lg:max-w-none
+              "
+            />
+
+            {/* Bottom Fade */}
+
+            <div
+              className="
+                pointer-events-none
+                absolute
+                inset-x-0
+                bottom-0
+                z-20
+                h-[20%]
+                bg-gradient-to-t
+                from-black/40
+                to-transparent
+              "
             />
           </motion.div>
 
-          {/* ============================================= */}
-          {/* FLOATING ROLE CARD */}
-          {/* ============================================= */}
+          {/* ================================================= */}
+          {/* FLOATING SPECIALIZATION CARD */}
+          {/* Desktop only */}
+          {/* ================================================= */}
 
           <motion.div
             animate={{
@@ -367,13 +621,27 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute right-[-15px] top-[120px] z-30 rounded-2xl border border-white/[0.08] bg-black/60 px-5 py-4 backdrop-blur-xl"
+            className="
+              absolute
+              right-[-15px]
+              top-[120px]
+              z-30
+              hidden
+              rounded-2xl
+              border
+              border-white/[0.08]
+              bg-black/60
+              px-5
+              py-4
+              backdrop-blur-xl
+              lg:block
+            "
           >
-            <p className="text-xs text-white font-extrabold">
+            <p className="text-xs font-extrabold text-white">
               Specialization :
             </p>
 
-            <p className="mt-1 font-semibold text-white text-sm">
+            <p className="mt-1 text-sm font-semibold text-white">
               React Native
             </p>
 
@@ -382,9 +650,10 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          {/* ============================================= */}
-          {/* FLOATING PLATFORM CARD */}
-          {/* ============================================= */}
+          {/* ================================================= */}
+          {/* PLATFORM CARD */}
+          {/* Tablet/Desktop */}
+          {/* ================================================= */}
 
           <motion.div
             animate={{
@@ -395,9 +664,27 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute bottom-[90px] left-[-25px] z-30 rounded-2xl border border-white/[0.08] bg-black/60 px-5 py-4 backdrop-blur-xl"
+            className="
+              absolute
+              bottom-[70px]
+              left-0
+              z-30
+              hidden
+              rounded-2xl
+              border
+              border-white/[0.08]
+              bg-black/60
+              px-4
+              py-3
+              backdrop-blur-xl
+              sm:block
+              lg:bottom-[90px]
+              lg:left-[-25px]
+              lg:px-5
+              lg:py-4
+            "
           >
-            <p className="text-xs text-white font-extrabold">
+            <p className="text-xs font-extrabold text-white">
               Platform
             </p>
 
@@ -406,25 +693,69 @@ export default function Hero() {
             </p>
           </motion.div>
 
-          {/* Decorative dots */}
+          {/* Decorative Dot */}
 
           <motion.div
             animate={{
               opacity: [0.3, 1, 0.3],
+              scale: [1, 1.35, 1],
             }}
             transition={{
               duration: 2.5,
               repeat: Infinity,
             }}
-            className="absolute right-[35px] top-[80px] h-2 w-2 rounded-full bg-white"
+            className="
+              absolute
+              right-[12%]
+              top-[12%]
+              h-2
+              w-2
+              rounded-full
+              bg-white
+              sm:right-[18%]
+              lg:right-[35px]
+              lg:top-[80px]
+            "
           />
-
-          <div className="absolute bottom-[60px] right-[40px] h-1.5 w-1.5 rounded-full bg-gray-600" />
         </motion.div>
       </div>
 
       {/* ================================================= */}
-      {/* SCROLL INDICATOR */}
+      {/* MOBILE LABEL */}
+      {/* ================================================= */}
+
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 15,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          delay: 1.5,
+        }}
+        className="
+          mt-3
+          flex
+          items-center
+          justify-center
+          gap-3
+          text-xs
+          text-gray-600
+          lg:hidden
+        "
+      >
+        <span>React Native Developer</span>
+
+        <span>•</span>
+
+        <span>Android + iOS</span>
+      </motion.div>
+
+      {/* ================================================= */}
+      {/* DESKTOP SCROLL INDICATOR */}
       {/* ================================================= */}
 
       <motion.div
@@ -435,13 +766,21 @@ export default function Hero() {
           duration: 2,
           repeat: Infinity,
         }}
-        className="absolute bottom-5 right-6 hidden items-center gap-3 text-sm text-gray-600 lg:flex"
+        className="
+          absolute
+          bottom-5
+          right-6
+          hidden
+          items-center
+          gap-3
+          text-sm
+          text-gray-600
+          lg:flex
+        "
       >
         Scroll to explore
 
-        <span>
-          ↓
-        </span>
+        <span>↓</span>
       </motion.div>
     </section>
   );
@@ -466,8 +805,8 @@ function AnimatedLink({
         href={href}
         className={
           primary
-            ? "block rounded-xl bg-white px-7 py-4 font-semibold text-black"
-            : "block rounded-xl border border-gray-700 px-7 py-4 font-semibold text-white transition hover:border-white"
+            ? "block rounded-xl bg-white px-6 py-3.5 font-semibold text-black sm:px-7 sm:py-4"
+            : "block rounded-xl border border-gray-700 px-6 py-3.5 font-semibold text-white transition hover:border-white sm:px-7 sm:py-4"
         }
       >
         {children}
