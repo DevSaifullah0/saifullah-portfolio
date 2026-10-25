@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import ProjectDetails from "../../../components/projects/ProjectDetails";
+import PTCSCaseStudy from "../../../components/projects/PTCSCaseStudy";
 
 import {
   getProjectBySlug,
@@ -28,8 +29,12 @@ export async function generateMetadata({
     };
   }
 
+  const projectTitle = slug === "ptcs"
+    ? "PTCS | Karachi Electric Bus Routes"
+    : `${project.title} | React Native Frontend Project`;
+
   return {
-    title: `${project.title} | React Native Frontend Project`,
+    title: projectTitle,
 
     description:
       project.shortDescription,
@@ -47,7 +52,7 @@ export async function generateMetadata({
     ],
 
     openGraph: {
-      title: `${project.title} | React Native Frontend Project`,
+      title: projectTitle,
 
       description:
         project.shortDescription,
@@ -66,6 +71,10 @@ export default async function ProjectPage({
 
   if (!project) {
     notFound();
+  }
+
+  if (slug === "ptcs") {
+    return <PTCSCaseStudy />;
   }
 
   const projectIndex = projects.findIndex(

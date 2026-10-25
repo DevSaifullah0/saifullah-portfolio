@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">PTCS project illustration</title>
+  <desc id="desc">An editorial illustration of a route line and stop markers on a warm green background. This is not an application screenshot or live map.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f8f0"/>
+      <stop offset="1" stop-color="#e5efe2"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#c8d9c3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" rx="48" fill="url(#paper)"/>
+  <rect width="1200" height="760" rx="48" fill="url(#dots)" opacity=".6"/>
+  <circle cx="1020" cy="130" r="210" fill="#dcebd8" opacity=".75"/>
+  <circle cx="170" cy="680" r="250" fill="#e0ecdf" opacity=".8"/>
+  <g fill="none" stroke="#b1cdb0" stroke-linecap="round">
+    <path d="M168 493c145 0 117-190 296-190s157 170 300 153 129-206 278-206" stroke-width="40"/>
+    <path d="M168 493c145 0 117-190 296-190s157 170 300 153 129-206 278-206" stroke="#34764b" stroke-width="8" stroke-dasharray="2 24"/>
+  </g>
+  <g fill="#fff" stroke="#34764b" stroke-width="9">
+    <circle cx="168" cy="493" r="24"/><circle cx="464" cy="303" r="24"/><circle cx="764" cy="456" r="24"/><circle cx="1042" cy="250" r="24"/>
+  </g>
+  <g fill="#34764b">
+    <circle cx="168" cy="493" r="7"/><circle cx="464" cy="303" r="7"/><circle cx="764" cy="456" r="7"/><circle cx="1042" cy="250" r="7"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#254b36">
+    <text x="92" y="112" font-size="22" letter-spacing="5" font-weight="700">KARACHI · TRANSIT</text>
+    <text x="88" y="220" font-size="104" letter-spacing="-7" font-weight="700">PTCS</text>
+    <text x="94" y="270" font-size="24" fill="#64806a">A bilingual route companion</text>
+    <text x="102" y="552" font-size="16" letter-spacing="2" fill="#64806a">PUBLISHED ROUTES</text>
+    <text x="401" y="363" font-size="16" letter-spacing="2" fill="#64806a">BOARDING POINTS</text>
+    <text x="697" y="516" font-size="16" letter-spacing="2" fill="#64806a">SAVED OFFLINE</text>
+    <text x="970" y="306" font-size="16" letter-spacing="2" fill="#64806a">VERIFIED EVENTS</text>
+    <text x="90" y="700" font-size="14" fill="#7a907c">Illustrative project art · not an app screenshot or live map</text>
+  </g>
+</svg>

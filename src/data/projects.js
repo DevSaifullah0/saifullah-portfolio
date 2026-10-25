@@ -1,4 +1,7 @@
+import { ptcsProject } from "./ptcs";
+
 export const projects = [
+  ptcsProject,
   {
     id: 1,
 
