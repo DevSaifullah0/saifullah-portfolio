@@ -5,24 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 
-const navigation = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/about",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
-];
+import SocialLinks from "../ui/SocialLinks";
+import { navigation as allNavigation } from "../../data/site";
+
+// Resume is shown as the highlighted call-to-action button
+const navigation = allNavigation.filter((item) => item.href !== "/resume");
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -70,14 +57,14 @@ export default function Navbar() {
             <div>
               <p className="text-2xl font-bold tracking-tight">
                 Saifullah
-                <span className="text-gray-500">.</span>
+                <span className="text-gray-400">.</span>
               </p>
             </div>
 
             {/* Developer Role - Desktop Only */}
 
             <div className="hidden border-l border-gray-800 pl-4 lg:block">
-              <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-gray-600">
+              <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-gray-500">
                 React Native
               </p>
 
@@ -92,7 +79,7 @@ export default function Navbar() {
         {/* DESKTOP NAVIGATION */}
         {/* ================================================= */}
 
-        <div className="hidden items-center gap-9 md:flex">
+        <div className="hidden items-center gap-7 lg:gap-9 md:flex">
           {navigation.map((item) => (
             <motion.div
               key={item.name}
@@ -102,25 +89,25 @@ export default function Navbar() {
             >
               <Link
                 href={item.href}
-                className={`relative text-sm transition-colors ${
+                aria-current={isActive(item.href) ? "page" : undefined}
+                className={`link-underline text-sm font-medium transition-colors ${
                   isActive(item.href)
                     ? "text-white"
-                    : "text-gray-500 hover:text-white"
+                    : "text-gray-300 hover:text-white"
                 }`}
               >
                 {item.name}
-
-                {/* Active Indicator */}
-
-                {isActive(item.href) && (
-                  <motion.span
-                    layoutId="navbar-active"
-                    className="absolute -bottom-2 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-white"
-                  />
-                )}
               </Link>
             </motion.div>
           ))}
+
+          {/* Social links (always visible) */}
+
+          <SocialLinks
+            variant="icon"
+            delay={0.6}
+            className="hidden border-l border-gray-800 pl-6 xl:flex"
+          />
 
           {/* Resume */}
 
@@ -210,7 +197,7 @@ export default function Navbar() {
               {/* Mobile Identity */}
 
               <div className="mb-6 border-b border-gray-900 pb-6">
-                <p className="text-xs uppercase tracking-[0.25em] text-gray-600">
+                <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
                   React Native
                 </p>
 
@@ -240,10 +227,10 @@ export default function Navbar() {
                     <Link
                       href={item.href}
                       onClick={() => setMenuOpen(false)}
-                      className={`flex items-center justify-between border-b border-gray-900 py-4 ${
+                      className={`flex items-center justify-between border-b border-gray-900 py-4 text-lg font-medium transition-colors hover:text-white ${
                         isActive(item.href)
                           ? "text-white"
-                          : "text-gray-400"
+                          : "text-gray-300"
                       }`}
                     >
                       <span>{item.name}</span>
@@ -265,6 +252,10 @@ export default function Navbar() {
               >
                 View Resume
               </Link>
+
+              {/* Social links */}
+
+              <SocialLinks className="mt-6" delay={0.3} />
             </div>
           </motion.div>
         )}

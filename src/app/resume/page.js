@@ -28,13 +28,13 @@ export default function ResumePage() {
         className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between"
       >
         <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
             Resume
           </p>
 
           <h1 className="mt-5 text-5xl font-bold md:text-7xl">
             My
-            <span className="text-gray-500">
+            <span className="text-gray-400">
               {" "}
               Resume.
             </span>
@@ -43,7 +43,7 @@ export default function ResumePage() {
           {/* Role */}
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <span className="text-xs uppercase tracking-[0.25em] text-gray-600">
+            <span className="text-xs uppercase tracking-[0.25em] text-gray-500">
               Role
             </span>
 
@@ -54,7 +54,7 @@ export default function ResumePage() {
             </span>
           </div>
 
-          <p className="mt-6 max-w-xl leading-7 text-gray-500">
+          <p className="mt-6 max-w-xl leading-7 text-gray-400">
             View my resume to explore my React Native frontend skills,
             mobile development projects, technical experience and education.
           </p>
@@ -122,7 +122,7 @@ export default function ResumePage() {
       <div className="mt-10">
         <Link
           href="/"
-          className="text-gray-500 transition hover:text-white"
+          className="link-underline text-gray-300 transition hover:text-white"
         >
           ← Back to Home
         </Link>

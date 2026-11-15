@@ -30,13 +30,13 @@ export default function ProjectsPage() {
             duration: 0.8,
           }}
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
             Selected Work
           </p>
 
           <h1 className="mt-6 max-w-5xl text-5xl font-bold leading-tight tracking-tight md:text-8xl">
             Mobile experiences built with
-            <span className="text-gray-500">
+            <span className="text-gray-400">
               {" "}
               React Native.
             </span>

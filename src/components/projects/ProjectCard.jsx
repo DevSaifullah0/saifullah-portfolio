@@ -46,7 +46,7 @@ export default function ProjectCard({
               className="object-contain p-2 transition duration-700 group-hover:scale-[1.03]"
             />
           ) : (
-            <div className="flex h-full items-center justify-center text-gray-700">
+            <div className="flex h-full items-center justify-center text-gray-500">
               Project Preview
             </div>
           )}
@@ -64,11 +64,11 @@ export default function ProjectCard({
 
         <div className="p-7 md:p-8">
           <div className="flex items-center justify-between gap-5">
-            <p className="text-xs uppercase tracking-[0.25em] text-gray-600">
+            <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
               {project.category}
             </p>
 
-            <span className="text-xs text-gray-600">
+            <span className="text-xs text-gray-500">
               {project.year}
             </span>
           </div>
@@ -81,7 +81,7 @@ export default function ProjectCard({
 
           {project.role && (
             <div className="mt-4 flex items-center gap-3">
-              <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
+              <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
                 My Role
               </span>
 
@@ -95,7 +95,7 @@ export default function ProjectCard({
 
           {/* Description */}
 
-          <p className="mt-5 line-clamp-3 leading-7 text-gray-500">
+          <p className="mt-5 line-clamp-3 leading-7 text-gray-400">
             {project.shortDescription}
           </p>
 
@@ -108,7 +108,7 @@ export default function ProjectCard({
                 .map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full border border-gray-800 px-3 py-1 text-xs text-gray-500"
+                    className="rounded-full border border-gray-800 px-3 py-1 text-xs text-gray-400"
                   >
                     {tech}
                   </span>

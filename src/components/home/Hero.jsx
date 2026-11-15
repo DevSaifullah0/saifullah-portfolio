@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import SocialLinks from "../ui/SocialLinks";
 import {
   motion,
   useMotionValue,
@@ -177,7 +178,7 @@ export default function Hero() {
                 delay: 0.65,
                 duration: 0.9,
               }}
-              className="block text-gray-500"
+              className="block text-gray-400"
             >
               Frontend Developer.
             </motion.span>
@@ -248,6 +249,10 @@ export default function Hero() {
             </AnimatedLink>
           </motion.div>
 
+          {/* Social links (always visible) */}
+
+          <SocialLinks className="mt-8" delay={1.3} />
+
           {/* Technologies */}
 
           <motion.div
@@ -268,7 +273,7 @@ export default function Hero() {
               gap-x-5
               gap-y-3
               text-sm
-              text-gray-600
+              text-gray-500
             "
           >
             <span>React Native CLI</span>
@@ -743,7 +748,7 @@ export default function Hero() {
           justify-center
           gap-3
           text-xs
-          text-gray-600
+          text-gray-500
           lg:hidden
         "
       >
@@ -774,7 +779,7 @@ export default function Hero() {
           items-center
           gap-3
           text-sm
-          text-gray-600
+          text-gray-500
           lg:flex
         "
       >

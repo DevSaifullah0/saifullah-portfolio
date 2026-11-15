@@ -30,13 +30,13 @@ export default function AboutPage() {
             duration: 0.8,
           }}
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
             About Me
           </p>
 
           <h1 className="mt-6 max-w-5xl text-5xl font-bold leading-tight tracking-tight md:text-8xl">
             React Native Frontend Developer
-            <span className="text-gray-500">
+            <span className="text-gray-400">
               {" "}
               focused on mobile experiences.
             </span>
@@ -63,7 +63,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
               Turning ideas into
-              <span className="block text-gray-500">
+              <span className="block text-gray-400">
                 polished mobile interfaces.
               </span>
             </h2>
@@ -157,7 +157,7 @@ export default function AboutPage() {
                 }}
                 className="rounded-3xl border border-gray-900 bg-[#070707] p-8"
               >
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-500">
                   {item.number}
                 </p>
 
@@ -165,7 +165,7 @@ export default function AboutPage() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-500">
+                <p className="mt-4 leading-7 text-gray-400">
                   {item.text}
                 </p>
               </motion.div>
@@ -219,7 +219,7 @@ export default function AboutPage() {
                 }}
                 className="rounded-2xl border border-gray-900 bg-[#070707] p-6"
               >
-                <p className="text-xs text-gray-600">
+                <p className="text-xs text-gray-500">
                   {String(index + 1).padStart(2, "0")}
                 </p>
 
@@ -273,7 +273,7 @@ export default function AboutPage() {
                   {group.title}
                 </h3>
 
-                <p className="mt-3 text-gray-500">
+                <p className="mt-3 text-gray-400">
                   {group.description}
                 </p>
 

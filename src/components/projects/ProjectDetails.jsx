@@ -34,7 +34,7 @@ export default function ProjectDetails({
 
           <Link
             href="/projects"
-            className="text-sm text-gray-500 transition hover:text-white"
+            className="text-sm text-gray-400 transition hover:text-white"
           >
             ← All Projects
           </Link>
@@ -43,7 +43,7 @@ export default function ProjectDetails({
             {/* Left */}
 
             <div className="max-w-4xl">
-              <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+              <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
                 {project.category}
               </p>
 
@@ -69,7 +69,7 @@ export default function ProjectDetails({
                   }}
                   className="mt-7 flex flex-wrap items-center gap-3"
                 >
-                  <span className="text-xs uppercase tracking-[0.25em] text-gray-600">
+                  <span className="text-xs uppercase tracking-[0.25em] text-gray-500">
                     My Role
                   </span>
 
@@ -96,7 +96,7 @@ export default function ProjectDetails({
               </span>
 
               {project.year && (
-                <span className="rounded-full border border-gray-800 px-5 py-3 text-sm text-gray-500">
+                <span className="rounded-full border border-gray-800 px-5 py-3 text-sm text-gray-400">
                   {project.year}
                 </span>
               )}
@@ -124,7 +124,7 @@ export default function ProjectDetails({
               .map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-gray-800 bg-[#080808] px-4 py-2 text-sm text-gray-500"
+                  className="rounded-full border border-gray-800 bg-[#080808] px-4 py-2 text-sm text-gray-400"
                 >
                   {tech}
                 </span>
@@ -224,7 +224,7 @@ export default function ProjectDetails({
                 }}
                 className="flex gap-4 rounded-xl border border-gray-800 bg-[#080808] p-4"
               >
-                <span className="text-xs text-gray-600">
+                <span className="text-xs text-gray-500">
                   {String(index + 1).padStart(
                     2,
                     "0"
@@ -249,7 +249,7 @@ export default function ProjectDetails({
         title="Frontend & Integration Stack"
       >
         <div>
-          <p className="mb-7 max-w-2xl leading-7 text-gray-500">
+          <p className="mb-7 max-w-2xl leading-7 text-gray-400">
             The main technologies used to build the mobile interface,
             navigation, application state and backend integrations.
           </p>
@@ -306,7 +306,7 @@ export default function ProjectDetails({
                 }}
                 className="flex items-center justify-between gap-6 border-b border-gray-800 py-5 last:border-none"
               >
-                <span className="text-gray-500">
+                <span className="text-gray-400">
                   {detail.label}
                 </span>
 
@@ -334,7 +334,7 @@ export default function ProjectDetails({
         title="Frontend Learnings"
       >
         <div>
-          <p className="mb-6 max-w-2xl leading-7 text-gray-500">
+          <p className="mb-6 max-w-2xl leading-7 text-gray-400">
             Key frontend development concepts and practical skills I
             strengthened while building this project.
           </p>
@@ -349,7 +349,7 @@ export default function ProjectDetails({
                   }}
                   className="flex gap-4 border-b border-gray-900 py-4"
                 >
-                  <span className="text-sm text-gray-700">
+                  <span className="text-sm text-gray-500">
                     {String(index + 1).padStart(
                       2,
                       "0"
@@ -375,7 +375,7 @@ export default function ProjectDetails({
         title="Explore Project"
       >
         <div>
-          <p className="mb-7 max-w-xl leading-7 text-gray-500">
+          <p className="mb-7 max-w-xl leading-7 text-gray-400">
             Explore the source code, application demo or Android build.
           </p>
 
@@ -410,7 +410,7 @@ export default function ProjectDetails({
       {nextProject && (
         <section className="border-t border-gray-900 py-24">
           <div className="mx-auto max-w-7xl px-6">
-            <p className="text-sm uppercase tracking-[0.3em] text-gray-600">
+            <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
               Next Project
             </p>
 
@@ -426,7 +426,7 @@ export default function ProjectDetails({
               >
                 {nextProject.title}
 
-                <span className="text-gray-600">
+                <span className="text-gray-500">
                   {" "}
                   →
                 </span>
@@ -466,7 +466,7 @@ function CaseStudySection({
             once: true,
           }}
         >
-          <p className="text-sm uppercase tracking-[0.25em] text-gray-600">
+          <p className="text-sm uppercase tracking-[0.25em] text-gray-500">
             {number} / {title}
           </p>
         </motion.div>
@@ -511,8 +511,8 @@ function ProjectAction({
       <span
         className={
           primary
-            ? "cursor-not-allowed rounded-xl bg-gray-800 px-7 py-4 font-semibold text-gray-500"
-            : "cursor-not-allowed rounded-xl border border-gray-800 px-7 py-4 font-semibold text-gray-600"
+            ? "cursor-not-allowed rounded-xl bg-gray-800 px-7 py-4 font-semibold text-gray-400"
+            : "cursor-not-allowed rounded-xl border border-gray-800 px-7 py-4 font-semibold text-gray-500"
         }
       >
         {children}

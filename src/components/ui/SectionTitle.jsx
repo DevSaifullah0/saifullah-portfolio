@@ -29,7 +29,7 @@ export default function SectionTitle({
       className={center ? "mx-auto text-center" : ""}
     >
       {eyebrow && (
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-500">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-400">
           {eyebrow}
         </p>
       )}
@@ -38,7 +38,7 @@ export default function SectionTitle({
         {title}
 
         {mutedTitle && (
-          <span className="text-gray-500">
+          <span className="text-gray-400">
             {" "}
             {mutedTitle}
           </span>
@@ -47,7 +47,7 @@ export default function SectionTitle({
 
       {description && (
         <p
-          className={`mt-6 max-w-2xl text-lg leading-8 text-gray-500 ${
+          className={`mt-6 max-w-2xl text-lg leading-8 text-gray-400 ${
             center ? "mx-auto" : ""
           }`}
         >

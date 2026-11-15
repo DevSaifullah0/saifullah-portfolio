@@ -40,19 +40,19 @@ export default function ContactCTA() {
           />
 
           <div className="relative z-10">
-            <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+            <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
               Let&apos;s Work Together
             </p>
 
             <h2 className="mt-6 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
               Looking for a React Native
-              <span className="text-gray-500">
+              <span className="text-gray-400">
                 {" "}
                 Frontend Developer?
               </span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-500">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               I&apos;m open to React Native frontend internships, junior
               developer roles and mobile application projects where I can build
               responsive interfaces, smooth navigation flows and real-world

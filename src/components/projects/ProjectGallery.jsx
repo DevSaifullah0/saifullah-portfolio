@@ -30,24 +30,24 @@ export default function ProjectGallery({ project }) {
             duration: 0.7,
           }}
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
             Mobile UI Gallery
           </p>
 
           <h2 className="mt-5 text-3xl font-bold md:text-5xl">
             Frontend screens from
-            <span className="text-gray-500">
+            <span className="text-gray-400">
               {" "}
               {project.title}.
             </span>
           </h2>
 
-          <p className="mt-5 max-w-2xl leading-7 text-gray-500">
+          <p className="mt-5 max-w-2xl leading-7 text-gray-400">
             A closer look at the mobile interfaces, navigation flows and
             frontend experiences built for the application.
           </p>
 
-          <p className="mt-3 text-sm text-gray-700">
+          <p className="mt-3 text-sm text-gray-500">
             {project.images.length} application screens
           </p>
         </motion.div>
@@ -84,7 +84,7 @@ export default function ProjectGallery({ project }) {
               {/* Number + Screen Name */}
 
               <div className="mb-4 flex items-center gap-4">
-                <span className="shrink-0 text-sm font-medium text-gray-600">
+                <span className="shrink-0 text-sm font-medium text-gray-500">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 

@@ -7,12 +7,7 @@ export const metadata = {
     "Contact Saifullah for React Native frontend development opportunities, internships and mobile application projects.",
 };
 
-const contact = {
-  email: "saifullahshaikh634@gmail.com",
-  linkedin: "https://www.linkedin.com/in/saifullah-507754372/",
-  github: "https://github.com/DevSaifullah0",
-  location: "Karachi, Pakistan",
-};
+import { contact } from "../../data/site";
 
 export default function ContactPage() {
   return (
@@ -33,13 +28,13 @@ export default function ContactPage() {
             duration: 0.8,
           }}
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
             Contact
           </p>
 
           <h1 className="mt-6 max-w-5xl text-5xl font-bold leading-tight tracking-tight md:text-8xl">
             Let&apos;s build
-            <span className="text-gray-500">
+            <span className="text-gray-400">
               {" "}
               something great.
             </span>
@@ -107,19 +102,19 @@ export default function ContactPage() {
             }}
             className="rounded-[36px] border border-gray-800 bg-[#080808] p-10 md:p-16"
           >
-            <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+            <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
               Start a Conversation
             </p>
 
             <h2 className="mt-6 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
               Looking for a React Native
-              <span className="text-gray-500">
+              <span className="text-gray-400">
                 {" "}
                 Frontend Developer?
               </span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-500">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               Feel free to reach out for React Native frontend roles,
               internships or mobile application development opportunities.
             </p>
@@ -153,18 +148,18 @@ function ContactCard({
   const content = (
     <>
       <div className="flex items-center justify-between">
-        <span className="text-sm text-gray-600">
+        <span className="text-sm text-gray-500">
           {number}
         </span>
 
         {href && (
-          <span className="text-gray-700">
+          <span className="text-gray-400 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-white">
             ↗
           </span>
         )}
       </div>
 
-      <p className="mt-10 text-sm uppercase tracking-[0.25em] text-gray-600">
+      <p className="mt-10 text-sm uppercase tracking-[0.25em] text-gray-500">
         {label}
       </p>
 
@@ -221,9 +216,9 @@ function ContactCard({
       }}
       whileHover={{
         y: -7,
-        borderColor: "#444444",
+        borderColor: "#ffffff",
       }}
-      className="rounded-3xl border border-gray-900 bg-[#070707] p-8"
+      className="group rounded-3xl border border-gray-800 bg-[#070707] p-8 transition-colors hover:bg-[#0d0d0d]"
     >
       {content}
     </motion.a>

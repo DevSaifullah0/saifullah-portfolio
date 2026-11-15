@@ -27,19 +27,19 @@ export default function SkillsPreview() {
             duration: 0.8,
           }}
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-500">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-400">
             Frontend Stack
           </p>
 
           <h2 className="mt-5 max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
             Technologies I use to build
-            <span className="text-gray-500">
+            <span className="text-gray-400">
               {" "}
               mobile experiences.
             </span>
           </h2>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-500">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
             My primary focus is React Native frontend development, from
             responsive mobile interfaces and navigation to API integration and
             real application workflows.
@@ -79,11 +79,11 @@ export default function SkillsPreview() {
               {/* Number */}
 
               <div className="flex items-center justify-between">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-500">
                   {String(index + 1).padStart(2, "0")}
                 </p>
 
-                <span className="text-xs uppercase tracking-[0.2em] text-gray-700">
+                <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
                   Frontend
                 </span>
               </div>
@@ -96,7 +96,7 @@ export default function SkillsPreview() {
 
               {/* Description */}
 
-              <p className="mt-3 max-w-md leading-7 text-gray-500">
+              <p className="mt-3 max-w-md leading-7 text-gray-400">
                 {group.description}
               </p>
 
@@ -130,7 +130,7 @@ export default function SkillsPreview() {
         >
           <Link
             href="/about"
-            className="text-gray-400 transition hover:text-white"
+            className="link-underline text-gray-300 transition hover:text-white"
           >
             Explore my frontend skills →
           </Link>

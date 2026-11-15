@@ -29,19 +29,19 @@ export default function FeaturedProjects() {
               duration: 0.8,
             }}
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-500">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-400">
               Selected Work
             </p>
 
             <h2 className="mt-5 text-4xl font-bold md:text-6xl">
               Featured
-              <span className="text-gray-500">
+              <span className="text-gray-400">
                 {" "}
                 Mobile Projects.
               </span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-500">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
               React Native projects where I focused on mobile UI development,
               navigation, reusable components, API integration and complete
               frontend user flows.
@@ -55,7 +55,7 @@ export default function FeaturedProjects() {
           >
             <Link
               href="/projects"
-              className="text-gray-400 transition hover:text-white"
+              className="link-underline text-gray-300 transition hover:text-white"
             >
               View all projects →
             </Link>

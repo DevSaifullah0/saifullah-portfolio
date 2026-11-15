@@ -34,13 +34,13 @@ export default function AboutPreview() {
               duration: 0.8,
             }}
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-500">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gray-400">
               About Me
             </p>
 
             <h2 className="mt-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl">
               Building frontend
-              <span className="block text-gray-500">
+              <span className="block text-gray-400">
                 mobile experiences.
               </span>
             </h2>
@@ -74,7 +74,7 @@ export default function AboutPreview() {
               components.
             </p>
 
-            <p className="mt-6 max-w-2xl leading-8 text-gray-500">
+            <p className="mt-6 max-w-2xl leading-8 text-gray-400">
               I also integrate mobile interfaces with REST APIs,
               authentication and application data to build complete real-world
               frontend experiences.
@@ -106,7 +106,7 @@ export default function AboutPreview() {
                   }}
                   className="flex items-center gap-4 rounded-2xl border border-gray-900 bg-[#070707] p-5"
                 >
-                  <span className="text-xs text-gray-700">
+                  <span className="text-xs text-gray-500">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
@@ -127,7 +127,7 @@ export default function AboutPreview() {
             >
               <Link
                 href="/about"
-                className="text-gray-400 transition hover:text-white"
+                className="link-underline text-gray-300 transition hover:text-white"
               >
                 More About Me →
               </Link>
