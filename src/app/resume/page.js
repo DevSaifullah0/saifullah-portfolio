@@ -1,6 +1,8 @@
 import Link from "next/link";
 import * as motion from "motion/react-client";
 
+import { contact } from "../../data/site";
+
 export const metadata = {
   title: "Resume",
 
@@ -60,22 +62,40 @@ export default function ResumePage() {
           </p>
         </div>
 
-        {/* Download Button */}
+        {/* View + Download Buttons */}
 
-        <motion.a
-          href="/resume/My Resume.docx.pdf"
-          download
-          whileHover={{
-            scale: 1.05,
-            y: -4,
-          }}
-          whileTap={{
-            scale: 0.96,
-          }}
-          className="w-fit rounded-xl bg-white px-7 py-4 font-semibold text-black"
-        >
-          Download Resume ↓
-        </motion.a>
+        <div className="flex flex-wrap gap-4">
+          <motion.a
+            href={contact.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{
+              scale: 1.05,
+              y: -4,
+            }}
+            whileTap={{
+              scale: 0.96,
+            }}
+            className="w-fit rounded-xl border border-gray-600 px-7 py-4 font-semibold text-white transition-colors hover:border-white"
+          >
+            View Full Screen ↗
+          </motion.a>
+
+          <motion.a
+            href={contact.resume}
+            download="Saifullah-CV.pdf"
+            whileHover={{
+              scale: 1.05,
+              y: -4,
+            }}
+            whileTap={{
+              scale: 0.96,
+            }}
+            className="w-fit rounded-xl bg-white px-7 py-4 font-semibold text-black"
+          >
+            Download Resume ↓
+          </motion.a>
+        </div>
       </motion.div>
 
       {/* Resume Viewer */}
@@ -96,7 +116,7 @@ export default function ResumePage() {
         className="mt-14 overflow-hidden rounded-3xl border border-gray-800 bg-[#080808]"
       >
         <object
-          data="/resume/My Resume.docx.pdf"
+          data={`${contact.resume}#view=FitH`}
           type="application/pdf"
           className="h-[85vh] min-h-[700px] w-full"
         >
@@ -106,10 +126,18 @@ export default function ResumePage() {
             </p>
 
             <a
-              href="/resume/My Resume.docx.pdf"
+              href={contact.resume}
+              download="Saifullah-CV.pdf"
+              className="mt-5 rounded-xl bg-white px-6 py-3 font-semibold text-black"
+            >
+              Download Resume ↓
+            </a>
+
+            <a
+              href={contact.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 text-white underline"
+              className="link-underline mt-5 text-white"
             >
               Open Resume
             </a>

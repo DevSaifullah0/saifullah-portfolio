@@ -4,7 +4,7 @@ export const contact = {
   linkedin: "https://www.linkedin.com/in/saifullah-507754372/",
   github: "https://github.com/DevSaifullah0",
   location: "Karachi, Pakistan",
-  resume: "/resume/My Resume.docx.pdf",
+  resume: "/resume/Saifullah-CV.pdf",
 };
 
 export const navigation = [
