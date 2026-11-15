@@ -106,7 +106,7 @@ export default function AboutPreview() {
                   }}
                   className="flex items-center gap-4 rounded-2xl border border-gray-900 bg-[#070707] p-5"
                 >
-                  <span className="text-xs text-gray-500">
+                  <span className="text-[13px] text-gray-500">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 

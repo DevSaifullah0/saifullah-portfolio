@@ -83,7 +83,7 @@ export default function SkillsPreview() {
                   {String(index + 1).padStart(2, "0")}
                 </p>
 
-                <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                <span className="text-[13px] uppercase tracking-[0.2em] text-gray-500">
                   Frontend
                 </span>
               </div>

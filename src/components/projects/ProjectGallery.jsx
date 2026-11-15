@@ -54,7 +54,7 @@ export default function ProjectGallery({ project }) {
 
         {/* Gallery Grid */}
 
-        <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-2 gap-x-3 gap-y-8 md:mt-16 md:grid-cols-2 md:gap-x-6 md:gap-y-12 lg:grid-cols-3">
           {project.images.map((image, index) => (
             <motion.div
               key={image.src}
@@ -83,14 +83,14 @@ export default function ProjectGallery({ project }) {
             >
               {/* Number + Screen Name */}
 
-              <div className="mb-4 flex items-center gap-4">
+              <div className="mb-3 flex items-center gap-2 md:mb-4 md:gap-4">
                 <span className="shrink-0 text-sm font-medium text-gray-500">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
-                <div className="h-px flex-1 bg-gray-900" />
+                <div className="hidden h-px flex-1 bg-gray-900 sm:block" />
 
-                <h3 className="shrink-0 text-sm font-medium text-gray-300">
+                <h3 className="min-w-0 text-[13px] font-medium leading-tight text-gray-300 md:shrink-0 md:text-sm">
                   {image.name}
                 </h3>
               </div>
@@ -104,7 +104,7 @@ export default function ProjectGallery({ project }) {
                 whileTap={{
                   scale: 0.98,
                 }}
-                className="relative block overflow-hidden rounded-[28px] border border-gray-800 bg-[#070707] transition-colors duration-300 hover:border-gray-600"
+                className="relative block overflow-hidden rounded-2xl border border-gray-800 md:rounded-[28px] bg-[#070707] transition-colors duration-300 hover:border-gray-600"
               >
                 {/* Exact Vertical Screenshot Area */}
 
@@ -125,7 +125,7 @@ export default function ProjectGallery({ project }) {
                 {/* Hover Overlay */}
 
                 <div className="pointer-events-none absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/70 via-transparent to-transparent p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <span className="rounded-full border border-white/20 bg-black/70 px-4 py-2 text-xs font-medium text-white backdrop-blur-md">
+                  <span className="rounded-full border border-white/20 bg-black/70 px-4 py-2 text-[13px] font-medium text-white backdrop-blur-md">
                     View Full Size ↗
                   </span>
                 </div>

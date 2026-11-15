@@ -149,3 +149,36 @@ section {
 .status-dot {
   animation: pulse-ring 1.8s ease-out infinite;
 }
+
+
+/* ========================================================= */
+/* Phone ergonomics                                           */
+/* ========================================================= */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+/* Invisible hit area so small text links reach ~44px without changing layout */
+
+.tap-area {
+  position: relative;
+}
+
+.tap-area::before {
+  content: "";
+  position: absolute;
+  inset: -10px -8px;
+}
+
+.link-underline::before {
+  content: "";
+  position: absolute;
+  inset: -10px -8px;
+}

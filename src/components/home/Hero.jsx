@@ -92,7 +92,7 @@ export default function Hero() {
       className="
         relative
         mx-auto
-        min-h-[calc(100vh-81px)]
+        min-h-[calc(100dvh-81px)]
         max-w-7xl
         overflow-hidden
         px-6
@@ -107,7 +107,7 @@ export default function Hero() {
       <div
         className="
           grid
-          min-h-[calc(100vh-180px)]
+          min-h-[calc(100dvh-180px)]
           items-center
           gap-12
           lg:grid-cols-[1.15fr_0.85fr]
@@ -642,7 +642,7 @@ export default function Hero() {
               lg:block
             "
           >
-            <p className="text-xs font-extrabold text-white">
+            <p className="text-[13px] font-extrabold text-white">
               Specialization :
             </p>
 
@@ -650,7 +650,7 @@ export default function Hero() {
               React Native
             </p>
 
-            <p className="mt-1 text-xs text-white">
+            <p className="mt-1 text-[13px] text-white">
               Frontend Development
             </p>
           </motion.div>
@@ -689,7 +689,7 @@ export default function Hero() {
               lg:py-4
             "
           >
-            <p className="text-xs font-extrabold text-white">
+            <p className="text-[13px] font-extrabold text-white">
               Platform
             </p>
 
@@ -747,7 +747,7 @@ export default function Hero() {
           items-center
           justify-center
           gap-3
-          text-xs
+          text-[13px]
           text-gray-500
           lg:hidden
         "

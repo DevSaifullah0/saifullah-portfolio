@@ -45,7 +45,7 @@ export default function ResumePage() {
           {/* Role */}
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
-            <span className="text-xs uppercase tracking-[0.25em] text-gray-500">
+            <span className="text-[13px] uppercase tracking-[0.25em] text-gray-500">
               Role
             </span>
 
@@ -115,10 +115,33 @@ export default function ResumePage() {
         }}
         className="mt-14 overflow-hidden rounded-3xl border border-gray-800 bg-[#080808]"
       >
+        <div className="flex flex-col items-center gap-5 p-8 text-center sm:hidden">
+          <p className="text-gray-400">
+            The PDF is easiest to read in your phone&apos;s own viewer.
+          </p>
+
+          <a
+            href={contact.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary flex min-h-12 w-full items-center justify-center rounded-xl bg-white px-6 font-semibold text-black"
+          >
+            Open Resume
+          </a>
+
+          <a
+            href={contact.resume}
+            download="Saifullah-CV.pdf"
+            className="flex min-h-12 w-full items-center justify-center rounded-xl border border-gray-700 px-6 font-semibold text-white"
+          >
+            Download PDF ↓
+          </a>
+        </div>
+
         <object
           data={`${contact.resume}#view=FitH`}
           type="application/pdf"
-          className="h-[85vh] min-h-[700px] w-full"
+          className="hidden h-[85dvh] min-h-[700px] w-full sm:block"
         >
           <div className="flex min-h-[500px] flex-col items-center justify-center p-8 text-center">
             <p className="text-gray-400">

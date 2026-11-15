@@ -55,7 +55,7 @@ export default function ProjectCard({
 
           {/* Status Badge */}
 
-          <div className="absolute right-4 top-4 rounded-full border border-white/10 bg-black/70 px-3 py-1.5 text-xs text-gray-300 backdrop-blur-md">
+          <div className="absolute right-4 top-4 rounded-full border border-white/10 bg-black/70 px-3 py-1.5 text-[13px] text-gray-300 backdrop-blur-md">
             {project.status}
           </div>
         </div>
@@ -64,11 +64,11 @@ export default function ProjectCard({
 
         <div className="p-7 md:p-8">
           <div className="flex items-center justify-between gap-5">
-            <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+            <p className="text-[13px] uppercase tracking-[0.25em] text-gray-500">
               {project.category}
             </p>
 
-            <span className="text-xs text-gray-500">
+            <span className="text-[13px] text-gray-500">
               {project.year}
             </span>
           </div>
@@ -81,7 +81,7 @@ export default function ProjectCard({
 
           {project.role && (
             <div className="mt-4 flex items-center gap-3">
-              <span className="text-xs uppercase tracking-[0.2em] text-gray-500">
+              <span className="text-[13px] uppercase tracking-[0.2em] text-gray-500">
                 My Role
               </span>
 
@@ -108,7 +108,7 @@ export default function ProjectCard({
                 .map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full border border-gray-800 px-3 py-1 text-xs text-gray-400"
+                    className="rounded-full border border-gray-800 px-3 py-1 text-[13px] text-gray-400"
                   >
                     {tech}
                   </span>

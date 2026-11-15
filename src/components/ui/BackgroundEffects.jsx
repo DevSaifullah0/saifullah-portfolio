@@ -28,7 +28,7 @@ export default function BackgroundEffects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute -left-52 -top-52 h-[600px] w-[600px] rounded-full bg-white/[0.045] blur-[150px]"
+        className="absolute -left-52 -top-52 hidden h-[600px] w-[600px] md:block rounded-full bg-white/[0.045] blur-[150px]"
       />
 
       {/* Glow 2 */}
@@ -43,7 +43,7 @@ export default function BackgroundEffects() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute -bottom-64 -right-52 h-[650px] w-[650px] rounded-full bg-gray-500/[0.04] blur-[160px]"
+        className="absolute -bottom-64 -right-52 hidden h-[650px] w-[650px] md:block rounded-full bg-gray-500/[0.04] blur-[160px]"
       />
     </div>
   );

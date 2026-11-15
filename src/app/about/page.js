@@ -219,7 +219,7 @@ export default function AboutPage() {
                 }}
                 className="rounded-2xl border border-gray-900 bg-[#070707] p-6"
               >
-                <p className="text-xs text-gray-500">
+                <p className="text-[13px] text-gray-500">
                   {String(index + 1).padStart(2, "0")}
                 </p>
 

@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Brand */}
 
           <motion.div {...fadeUp} className="md:col-span-5">
-            <Link href="/" className="text-2xl font-bold">
+            <Link href="/" className="tap-area text-2xl font-bold">
               Saifullah
               <span className="text-gray-400">.</span>
             </Link>
@@ -45,11 +45,11 @@ export default function Footer() {
             aria-label="Footer navigation"
             className="md:col-span-3"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-400">
+            <p className="text-[13px] font-semibold uppercase tracking-[0.25em] text-gray-400">
               Navigate
             </p>
 
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-5 space-y-4">
               {navigation.map((item) => (
                 <li key={item.name}>
                   <motion.span
@@ -75,7 +75,7 @@ export default function Footer() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="md:col-span-4"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-400">
+            <p className="text-[13px] font-semibold uppercase tracking-[0.25em] text-gray-400">
               Connect
             </p>
 
@@ -104,7 +104,7 @@ export default function Footer() {
             }
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.95 }}
-            className="w-fit text-gray-200 transition-colors hover:text-white"
+            className="inline-flex min-h-11 w-fit items-center text-gray-200 transition-colors hover:text-white"
           >
             Back to top ↑
           </motion.button>

@@ -34,7 +34,7 @@ export default function ProjectDetails({
 
           <Link
             href="/projects"
-            className="text-sm text-gray-400 transition hover:text-white"
+            className="tap-area inline-block py-1.5 text-sm text-gray-400 transition hover:text-white"
           >
             ← All Projects
           </Link>
@@ -69,7 +69,7 @@ export default function ProjectDetails({
                   }}
                   className="mt-7 flex flex-wrap items-center gap-3"
                 >
-                  <span className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                  <span className="text-[13px] uppercase tracking-[0.25em] text-gray-500">
                     My Role
                   </span>
 
@@ -224,7 +224,7 @@ export default function ProjectDetails({
                 }}
                 className="flex gap-4 rounded-xl border border-gray-800 bg-[#080808] p-4"
               >
-                <span className="text-xs text-gray-500">
+                <span className="text-[13px] text-gray-500">
                   {String(index + 1).padStart(
                     2,
                     "0"

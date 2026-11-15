@@ -52,7 +52,7 @@ export default function Navbar() {
           <Link
             href="/"
             onClick={() => setMenuOpen(false)}
-            className="flex items-center gap-4"
+            className="tap-area flex items-center gap-4"
           >
             <div>
               <p className="text-2xl font-bold tracking-tight">
@@ -68,7 +68,7 @@ export default function Navbar() {
                 React Native
               </p>
 
-              <p className="mt-0.5 text-xs text-gray-400">
+              <p className="mt-0.5 text-[13px] text-gray-400">
                 Frontend Developer
               </p>
             </div>
@@ -142,7 +142,7 @@ export default function Navbar() {
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((previous) => !previous)}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
+          className="flex h-11 w-11 flex-col items-center justify-center gap-[5px] md:hidden"
         >
           <motion.span
             animate={{
@@ -191,13 +191,13 @@ export default function Navbar() {
             transition={{
               duration: 0.3,
             }}
-            className="overflow-hidden border-t border-gray-900 bg-black md:hidden"
+            className="max-h-[calc(100dvh-65px)] overflow-y-auto border-t border-gray-900 bg-black md:hidden"
           >
             <div className="px-6 py-6">
               {/* Mobile Identity */}
 
               <div className="mb-6 border-b border-gray-900 pb-6">
-                <p className="text-xs uppercase tracking-[0.25em] text-gray-500">
+                <p className="text-[13px] uppercase tracking-[0.25em] text-gray-500">
                   React Native
                 </p>
 
